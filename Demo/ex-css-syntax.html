@@ -4,13 +4,47 @@
         <meta charset="utf-8">
         <meta name ="viewport" content="width=device-width, initial-scale=1.0">
         <title>Links - section</title>
+        
+        <!-- ID's are more specific than classes -->
+        <!-- Internal Style Sheet -->
+        <!-- Internal Style Sheet has to be within head -->
+        <style>
+            h1, h2 {
+                color:red;
+            }
+            
+            /* The second h2 will be green because it has an id="green". All #green will be green. */
+            #green {
+                color:green; 
+                /* text-transform:uppercase;    */
+            }
+
+            h2 {
+                color:orchid;
+            }
+
+            .bold{
+                font-weight: bold;
+            }
+        
+        </style>
     </head>
     <body>
-        <h1>CS291 - Computer Science II</h1>
-        <h2>Description</h2>
-        <p>Data structuring using structured variables, stacks, queues, linked lists, and trees; recursive procedures; applications to sorting and merging. The class emphasizes theoretical understanding of data structures, their implementation, and the object-oriented viewpoint. Assignments will contain significant programming projects along with programming-free questions that explore how data structures work.</p>
-        <h2>Prerequisites</h2>
-        <p>CS 172, MATH 141 OR MATH 225 </p>
+
+        <!-- In-line Style -->
+        <h1 style="color:red;" class="bold">CS291 - Computer Science II</h1>
+
+        <!-- This will be brown because the style is closer to the element -->
+        <h2 style="color:brown;">Description</h2>
+        <p>Data structuring using structured variables, stacks, queues, linked lists, and trees;
+            recursive procedures; applications to sorting and merging. The class emphasizes theoretical 
+            understanding of data structures, their implementation, and the object-oriented viewpoint. 
+            Assignments will contain significant programming projects along with programming-free questions 
+            that explore how data structures work.</p>
+
+        
+        <h2 id="green" class="bold">Prerequisites</h2>
+        <p class="bold">CS 172, MATH 141 OR MATH 225 </p>
 
 
 
