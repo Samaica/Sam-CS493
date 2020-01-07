@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, Helvetica,
+     sans-serif;
+}
+
+a:link {
+    color:black;
+    text-decoration:none;
+    background-color: rgb(252, 184, 184);
+    display: block; width: 200px; 
+        border: 1px; border-color:white ;
+} 
+
+a:visited {
+    color: rgb(183, 111, 111);
+}
+
+a:hover, a:active{
+    background-color: red;
+    color: white;
+}
+
+img {
+    float: left;
+}
+
+.tagelement {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:bold;
+    background-color: lightgray;
+    box-sizing: border-box;
+    text-align: center;
+    /* You need to add display: inline-block on the elements you wish to align
+    side by side, as div elements have a default style of display: block,
+    meaning they will stack vertically instead of horizontally
+    (not the behaviour you want). */
+    display: inline-block;
+    width: 49%;
+    height: 150px;
+    margin: 5px;
+    padding: 40px;
+}
+
