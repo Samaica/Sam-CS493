@@ -5,24 +5,25 @@
         <title>Bootstrap Exercise</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         </style>
 
     </head>
     <body>
         <nav>
             <div>
-                <ul >
-                    <li 
-                        <a href="#">Home</span></a>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</span></a>
                     </li>
                     <li >
-                        <a href="#">Menu One</a>
+                        <a class="nav-link" href="#">Menu One</a>
                     </li>     
                     <li >
-                        <a href="#">Menu Two</a>
+                        <a class="nav-link" href="#">Menu Two</a>
                     </li>
                     <li >
-                        <a href="#">Menu Three</a>
+                        <a class="nav-link" href="#">Menu Three</a>
                     </li>
                 </ul>
 
@@ -30,16 +31,17 @@
         </nav> 
 
         <header>
-            <div >
+            <div class="jumbotron text-center">
                 <h1 id="top">CS493</h1>
-                <p id="leadtext" >Advanced Topics in Computing/Information Systems Management (Introduction to Front-End Web Development)</p>       
+                <p id="leadtext" class="lead" >Advanced Topics in Computing/Information Systems Management (Introduction to Front-End Web Development)</p>       
                 <hr >
                 <p >CS493 teaches students how to develop modern web pages using HTML and CSS. JavaScript and React.js will also be introduced.</p>   
-                <button type="button" >Learn More</button>
+                <button class="btn btn-primary" type="button" >Learn More</button>
+                <a href="#" class="btn btn-success"> Success</a>
             </div>
         </header>
 
-        <div >
+        <div class="container-md" >
         
             <div >
                 <aside>
@@ -75,9 +77,9 @@
 
                 <hr >
                 <img src="image/YorkLogo-small.png">
-                <div >
-                    <div >
-                        <div title="Vision"  >
+                <div class="container" >
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-4" title="Vision"  >
                             <p>Paragraph1 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elementum sapien ac dui lacinia efficitur. 
                             Cras sodales a quam quis imperdiet. Ut dignissim nisl molestie, dapibus nibh sit amet, euismod mi. Curabitur pulvinar est velit. 
                             Mauris quis lacus lectus. Integer consectetur nunc at justo malesuada gravida. 
@@ -85,41 +87,41 @@
                             Phasellus ut felis ac massa gravida cursus sit amet at dolor. In nec rhoncus enim.</p>  
                         </div>
 
-                        <div >
+                        <div class="col-sm-6 col-lg-4" >
                             <p>Paragraph2 - Nam accumsan libero at diam egestas, quis semper nulla condimentum. 
                                 Morbi vitae dui ut metus tincidunt gravida consectetur at ligula. Duis ornare, metus non porta pharetra, 
                                 purus ipsum tincidunt neque, id pharetra lorem nunc vel metus. Nulla aliquam ullamcorper nunc at aliquam. 
                                 Suspendisse pulvinar euismod sem eu posuere. Sed feugiat turpis sed libero volutpat, et ornare ipsum condimentum. </p>
                         </div>
-                        <div >Paragraph3 - Nam accumsan libero at diam egestas, quis semper nulla condimentum. 
+                        <div class="col-sm-6 col-lg-4" >Paragraph3 - Nam accumsan libero at diam egestas, quis semper nulla condimentum. 
                                 Morbi vitae dui ut metus tincidunt gravida consectetur at ligula. Duis ornare, metus non porta pharetra, 
                                 purus ipsum tincidunt neque, id pharetra lorem nunc vel metus. Nulla aliquam ullamcorper nunc at aliquam. 
                                 Suspendisse pulvinar euismod sem eu posuere. Sed feugiat turpis sed libero volutpat, et ornare ipsum condimentum. 
                         </div>
-                        <div   >Paragraph4 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elementum sapien ac dui lacinia efficitur. 
+                        <div class="col-sm-6 col-lg-4" >Paragraph4 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elementum sapien ac dui lacinia efficitur. 
                                 Cras sodales a quam quis imperdiet. Ut dignissim nisl molestie, dapibus nibh sit amet, euismod mi. Curabitur pulvinar est velit. 
                                 Mauris quis lacus lectus. Integer consectetur nunc at justo malesuada gravida. 
                                 Aenean vel cursus lorem. Morbi sit amet blandit purus, vel consectetur nunc. 
                                 Phasellus ut felis ac massa gravida cursus sit amet at dolor. In nec rhoncus enim.  
-                            </div>
+                        </div>
 
-                            <div >Paragraph5 - Nam accumsan libero at diam egestas, quis semper nulla condimentum. 
-                                    Morbi vitae dui ut metus tincidunt gravida consectetur at ligula. Duis ornare, metus non porta pharetra, 
-                                    purus ipsum tincidunt neque, id pharetra lorem nunc vel metus. Nulla aliquam ullamcorper nunc at aliquam. 
-                                    Suspendisse pulvinar euismod sem eu posuere. Sed feugiat turpis sed libero volutpat, et ornare ipsum condimentum. 
-                            </div>
-                            <div >Paragraph6 - Nam accumsan libero at diam egestas, quis semper nulla condimentum. 
-                                    Morbi vitae dui ut metus tincidunt gravida consectetur at ligula. Duis ornare, metus non porta pharetra, 
-                                    purus ipsum tincidunt neque, id pharetra lorem nunc vel metus. Nulla aliquam ullamcorper nunc at aliquam. 
-                                    Suspendisse pulvinar euismod sem eu posuere. Sed feugiat turpis sed libero volutpat, et ornare ipsum condimentum. 
-                            </div>                
+                        <div class="col-sm-6 col-lg-4">Paragraph5 - Nam accumsan libero at diam egestas, quis semper nulla condimentum. 
+                                Morbi vitae dui ut metus tincidunt gravida consectetur at ligula. Duis ornare, metus non porta pharetra, 
+                                purus ipsum tincidunt neque, id pharetra lorem nunc vel metus. Nulla aliquam ullamcorper nunc at aliquam. 
+                                Suspendisse pulvinar euismod sem eu posuere. Sed feugiat turpis sed libero volutpat, et ornare ipsum condimentum. 
+                        </div>
+                        <div class="col-sm-6 col-lg-4" >Paragraph6 - Nam accumsan libero at diam egestas, quis semper nulla condimentum. 
+                                Morbi vitae dui ut metus tincidunt gravida consectetur at ligula. Duis ornare, metus non porta pharetra, 
+                                purus ipsum tincidunt neque, id pharetra lorem nunc vel metus. Nulla aliquam ullamcorper nunc at aliquam. 
+                                Suspendisse pulvinar euismod sem eu posuere. Sed feugiat turpis sed libero volutpat, et ornare ipsum condimentum. 
+                        </div>                
                     </div>           
                 </div>
                 <hr>
 
                 <div >
-                        <table >
-                                <thead>
+                        <table class="table table-striped">
+                                <thead class="thead-dark">
                                     <tr>
                                         <th colspan="2">HTML Elements</th>
                                         <th>Example</th>
@@ -139,7 +141,7 @@
                                     <tr>
                                         <td>HTML Comments</td>
                                         <td>Comment tags are used to insert comments in the HTML source code.</td>
-                                        <td><span style="color:green;">&lt;!-- Write your comments here --&gt;</span</td>
+                                        <td><span style="color:green;">&lt;!-- Write your comments here --&gt;</span></td>
                                     </tr> 
                                 </tbody>                    
                             </table>           
@@ -163,5 +165,8 @@
             </div>
         
     </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     </body>
 </html>
