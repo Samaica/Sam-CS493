@@ -4,35 +4,90 @@
         <meta charset="utf-8">
         <meta name="author" content="Your Name">
         <title>Sam's Portfolio</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
     <body>
-       
-        <a href="index.html" title="Goes to Homepage.">Home</a>
-        <a href="MySkill.html" title="Sam's Skills">My Skills</a>
-        <a href="CoursesCompleted.html" title="Courses completed by Sam"> Courses Completed</a>
-        <a href="MyGallery.html" title="Sam's Gallery">My Gallery</a>
-        <h1><u>Samuel Franklin</u></h1>
-        <h3>Novice Coder, Student, Gamer.</h3>
-        <hr>
-       
-        <section>
-            <h2>About me.</h2>
-            <p>Hello, I am Sam. Growing up, I was always around computers but didn't consider to work with them for a career.
-                My childhood dream was to be a pilot but then I saw a movie in which people could use computers to access the human mind.
-                As a result, I became interested in computers as a way to help people in many ways, neurologically. It may be a far-fetched fantasy,
-                but I hope one day I can advance technology further in a way to allow computers to visualize and display human thoughts  and dreams.
-            </p>
-        </section>
-        
-        <br>
-        <div>
-        <h2>"Is that a guitar in your room?"</h2>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;by Andrew R.</p>
-        
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Explore Sam's Website</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" 
+            data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" 
+            aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="index.html" title="Goes to Homepage.">Home</a>
+                    <a class="nav-item nav-link" href="MySkill.html" title="Sam's Skills">My Skills</a>
+                    <a class="nav-item nav-link" href="CoursesCompleted.html" title="Courses completed by Sam">Courses Completed</a>
+                    <a class="nav-item nav-link" href="MyGallery.html" title="Sam's Gallery">My Gallery</a>
+                    
+                </div>
+            </div>
+        </nav>
 
-        <br>
-        <img src="./Images/12317853_514826352024395_1598734749_n(1).jpg" alt="Picture of me" width="400" height="400" >
+        <div class="jumpotron text-center">
+            <h1><u>Samuel Franklin</u></h1>
+            <h3>Novice Coder, Student, Gamer.</h3>
         </div>
-        <footer>Sam&copy;</footer>
-               
+
+        <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <section>
+                        <h2 >About me.</h2>
+                            <blockquote class="blockquote">
+                                <p class="mb-0">Hello, I am Sam. Growing up, I was always around computers but didn't consider to work with them for a career.
+                                My childhood dream was to be a pilot but then I saw a movie in which people could use computers to access the human mind.
+                                As a result, I became interested in computers as a way to help people in many ways, neurologically. It may be a far-fetched fantasy,
+                                but I hope one day I can advance technology further in a way to allow computers to visualize and display human thoughts  and dreams.
+                                </p>
+                            </blockquote>
+                    </section>
+                </div>              
+                <div class="col-lg-6"> 
+                    <br>
+                    <img src="./Images/12317853_514826352024395_1598734749_n(1).jpg" alt="Picture of me" width="400" height="400" >
+                </div>
+            </div>
+        </div>
+        
+        <br>
+        <br>
+        
+        <div >
+            <blockquote class="blockquote text-center">
+                <p class="mb-0">"Is that a guitar in your room?"</p>
+                <footer class="blockquote-footer"> by Andrew R. </footer>     
+            </blockquote>
+        </div>
+        <footer>Sam&copy;
+            <div class="row">
+                <div class="col-sm-6">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Sam's Linked in</h5>
+                      <p class="card-text">Sam's education and job experiences.</p>
+                      <a href="https://www.linkedin.com/in/samuel-franklin-35558719b/" target="_blank" class="btn btn-primary">Visit now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Special title treatment</h5>
+                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                      <a href="https://www.linkedin.com/in/samuel-franklin-35558719b/" target="_blank" class="btn btn-primary">Visit now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </footer>
+    </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>        
 </html>
