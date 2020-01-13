@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Midterm Exam tester</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <style>
+        
+            footer.page-footer {
+                background-color: black;
+                color: white;
+            }
+            
+            .card {
+                display: inline-block;
+                float: right;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <div>
+                <ul class="nav nav-tabs nav-fill">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Menu One</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Menu Two</a>
+                    </li>     
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Menu Three</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Menu Four</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav> 
+
+        <header>
+            <div class="jumbotron text-center">
+                <h1 id="top">CS493</h1>
+                <p id="leadtext" class="lead" >Advanced Topics in Computing/Information Systems Management (Introduction to Front-End Web Development)</p>       
+                <hr >
+                <p >CS493 teaches students how to develop modern web pages using HTML and CSS. JavaScript and React.js will also be introduced.</p>   
+                <img src="data:image/png;base64,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" alt="York College Logo" height="200">
+            </div>
+        </header>
+
+        
+            
+                <section id="section1">
+                    <hr >
+                    <h1 id="topic">Topics</h1>
+                    <div class="container">
+                    <div  class="row">
+                        <!-- <div class="floatleft col-lg-4"> -->
+                            <div class=" floatleft col-sm-6 col-lg-3 card" >
+                                <div class="card-body">
+                                    <h5 class="card-title">CS172</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">Computer Science I</h6>
+                                    <p class="card-text">Learn Basics of C++</p>
+                                    <button type="button" class="btn btn-outline-secondary btn-sm">Course Description</button>
+                                </div>
+                            </div>
+
+                            <div class="floatleft col-sm-6 col-lg-3 card" >
+                                <div class="card-body">
+                                    <h5 class="card-title">CS291</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">Computer Science II</h6>
+                                    <p class="card-text">Data Structures and Intro to Algorithms</p>
+                                    <button type="button" class="btn btn-outline-secondary btn-sm">Course Description</button>
+                                </div>
+                            </div>
+
+                            <div class="floatleft col-sm-6 col-lg-3 card" >
+                                <div class="card-body">
+                                    <h5 class="card-title">CS341</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">Data Structures and Algorithms</h6>
+                                    <p class="card-text">More on Data Structures and Algorithms</p>
+                                    <button type="button" class="btn btn-outline-secondary btn-sm">Course Description</button>
+                                </div>
+                            </div>
+
+                            <div class="floatleft col-sm-6 col-lg-3 card" >
+                                <div class="card-body">
+                                    <h5 class="card-title">CS351</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">Algorithms Design and Analysis</h6>
+                                    <p class="card-text">Learn more advanced Algorithms</p>
+                                    <button type="button" class="btn btn-outline-secondary btn-sm">Course Description</button>
+                                </div>
+                            </div>
+                        </div>
+                </section>
+                
+                <section id="section2">
+                    <div >
+                        <table class="table table-striped">
+                            <thead >
+                                <tr>
+                                    <th colspan="2">HTML Elements</th>
+                                    <th>Example</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>HTML Links</td>
+                                    <td>Links allow users to click their way from page to page.</td>
+                                    <td>&lt;a&nbsp;href="url"&gt;link&nbsp;text&lt;/a&gt;</td>
+                                </tr>
+                                <tr>
+                                    <td>HTML Images</td>
+                                    <td>Images can improve the design and the appearance of a web page.</td>
+                                    <td>&lt;img src="url"&gt;</td>
+                                </tr>   
+                                <tr>
+                                    <td>HTML Comments</td>
+                                    <td>Comment tags are used to insert comments in the HTML source code.</td>
+                                    <td>&lt;!-- Write your comments here --&gt;</td>
+                                </tr> 
+                            </tbody>                    
+                        </table>           
+                    </div>
+                </section>
+            </div>
+        </div>
+
+                <footer class="page-footer ">
+                        <div class=" text-center">&copy; by CS493 course</div>
+                </footer>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </body>
+</html>
