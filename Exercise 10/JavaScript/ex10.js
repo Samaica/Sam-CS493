@@ -122,9 +122,9 @@ btn4.onclick = function(){
     para4.innerHTML = "Clicked!!!"
     let initNumber = document.getElementById("txtNumber").value;
     let sum = 0;
-    for(i = 1; i <= ;i++){
-        
+    for(i = 1; i <= initNumber; i++){
+        sum = sum + i;
     }
-
+    para4.innerHTML = sum;
 
 }
