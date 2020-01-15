@@ -62,7 +62,7 @@ function addTwo(x, y){
 
 console.log(addTwo(10, 20));
 
-function changeTextColor(){
+function changeTextColor() {
     document.getElementById("top").style.color="red";
 }
 
@@ -73,12 +73,11 @@ document.getElementById("top").ondblclick = changeTextColor;
 
 //Exercise 10
 //Q1
-const btn1 = document.getElementById("btnOne");
-
-btn1.onclick = incrementCount;
+const btn1 = document.getElementById("btnOne"); //makes a var. for a DOM
+btn1.onclick = incrementCount; //Object w/ event = undefined function
 count = 1;
 
-function incrementCount(){
+function incrementCount(){  //function from like 77 gets defined
     document.getElementById("paraOne").innerHTML = count;
     count++;
 }
@@ -116,10 +115,10 @@ function changeBgColor(){
 // }
 
 //Q4
-
-const para4 = document.getElementById("btnFour");
+const btn4 = document.getElementById("btnFour");
+const para4 = document.getElementById("paraFour");
 btn4.onclick = function(){
-    para4.innerHTML = "Clicked!!!"
+    // para4.innerHTML = "Clicked!!!"
     let initNumber = document.getElementById("txtNumber").value;
     let sum = 0;
     for(i = 1; i <= initNumber; i++){
@@ -128,3 +127,24 @@ btn4.onclick = function(){
     para4.innerHTML = sum;
 
 }
+
+//Q5
+const btn5 = document.getElementById("btnFive");  //Times button
+const para5 = document.getElementById("paraFive"); //Output slot
+
+btn5.onclick = function(){
+    let n1 = document.getElementById("numberOne").value;
+    let n2 = document.getElementById("numberTwo").value;
+    let product = n1 * n2;
+    para5.innerHTML = product;
+}
+
+// btn5.onclick = Multiply;
+// function Multiply(){
+//     let n1 = document.getElementById("numberOne").value;
+//     let n2 = document.getElementById("numberTwo").value;
+//     let product = n1 * n2;
+//     para5.innerText = product;
+// }
+
+// Multiply();
