@@ -136,7 +136,7 @@ btn5.onclick = function(){
     let n1 = document.getElementById("numberOne").value;
     let n2 = document.getElementById("numberTwo").value;
     let product = n1 * n2;
-    para5.innerHTML = product;
+    para5.innerText = product;
 }
 
 // btn5.onclick = Multiply;
@@ -148,3 +148,16 @@ btn5.onclick = function(){
 // }
 
 // Multiply();
+
+const btn6 = document.getElementById("btnSix");
+const shopList = document.getElementById("shoppingList");
+
+
+btn6.onclick = function(){
+    let listItem = document.getElementById("listItem").value;
+    let newItem = document.createElement("li"); 
+    newItem.innerText = listItem;
+    
+    document.getElementById("shoppingList").appendChild(newItem);
+
+}
