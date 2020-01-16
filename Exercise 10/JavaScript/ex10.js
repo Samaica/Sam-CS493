@@ -158,6 +158,6 @@ btn6.onclick = function(){
     let newItem = document.createElement("li"); 
     newItem.innerText = listItem;
     
-    document.getElementById("shoppingList").appendChild(newItem);
+    shopList.appendChild(newItem);
 
 }
