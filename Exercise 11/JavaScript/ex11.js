@@ -32,11 +32,14 @@ btn4 = document.getElementsByClassName("btn")[3];
 const image1 = './Images/YorkLogo-1.png'
 const image2 = './Images/YorkLogo-2.png'
 btn4.onclick = function() {
-    let shownImage = document.getElementsByClassName("float-right")[0];
-    let showImage1 = shownImage.src = image2;
-
-    if (shownImage == image1) {
-        shownImage = image2;
+    let shownImage = document.getElementsByClassName("float-right")[0].src;
+    
+    if (shownImage.indexOf('YorkLogo-1.png') != -1){
+        document.getElementsByClassName("float-right")[0].src = './Images/YorkLogo-2.png';
+    }
+        
+    else {
+        document.getElementsByClassName("float-right")[0].src = './Images/YorkLogo-1.png';
     }
     
 }
