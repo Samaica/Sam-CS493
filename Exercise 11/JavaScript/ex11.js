@@ -27,6 +27,22 @@ btn3.onclick = function(){
     parentNode.removeChild(parentNode.lastChild);
 }
 
+//Change Image
+btn4 = document.getElementsByClassName("btn")[3];
+const image1 = './Images/YorkLogo-1.png'
+const image2 = './Images/YorkLogo-2.png'
+btn4.onclick = function() {
+    let shownImage = document.getElementsByClassName("float-right")[0];
+    let showImage1 = shownImage.src = image2;
+
+    if (shownImage == image1) {
+        shownImage = image2;
+    }
+    
+}
+ 
+    
+
 
 
 btn5 = document.getElementsByClassName("btn")[4];
@@ -34,4 +50,15 @@ btn5 = document.getElementsByClassName("btn")[4];
 btn5.onclick = function() {
     alertThing = document.getElementById("alertbox");
     alertThing.innerHTML = "<div class='alert alert-success'>Winner, winner! Chicken Dinner!</div>";
+}
+
+btn6 = document.getElementById("btn-new-task");
+
+btn6.onclick = function() {
+    let toDoTask = document.getElementById("new-task").value;
+    let newTask = document.createElement("li");
+    newTask.innerText = toDoTask;
+
+    let parentList = document.getElementById("todo-tasks");
+    parentList.appendChild(newTask);
 }
