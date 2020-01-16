@@ -29,22 +29,33 @@ btn3.onclick = function(){
 
 //Change Image
 btn4 = document.getElementsByClassName("btn")[3];
-const image1 = './Images/YorkLogo-1.png'
-const image2 = './Images/YorkLogo-2.png'
-btn4.onclick = function() {
-    let shownImage = document.getElementsByClassName("float-right")[0].src;
+// const image1 = './Images/YorkLogo-1.png'
+// const image2 = './Images/YorkLogo-2.png'
+// btn4.onclick = function() {
+//     let changeImage = document.getElementsByClassName("float-right")[0].src;
     
-    if (shownImage.indexOf('YorkLogo-1.png') != -1){
-        document.getElementsByClassName("float-right")[0].src = './Images/YorkLogo-2.png';
-    }
+//     if (changeImage.indexOf('YorkLogo-1.png') != -1){
+//         document.getElementsByClassName("float-right")[0].src = './Images/YorkLogo-2.png';
+//     }
         
-    else {
-        document.getElementsByClassName("float-right")[0].src = './Images/YorkLogo-1.png';
+//     else {
+//         document.getElementsByClassName("float-right")[0].src = './Images/YorkLogo-1.png';
+//     }  
+// }
+
+btn4.AddEventListener("click", changeImage);
+function changeImage() {
+    let myImage = document.querySelector("img");
+    let imageFile = myImage.getAttribute("src");
+
+    if (imageFile == './Images/YorkLogo-1.png') {
+        myImage.setAttribute("src", "./Images/YorkLogo-2.png")
     }
-    
+
+    else {
+        myImage.setAttribute("src", "./Images/YorkLogo-1.png")
+    }
 }
- 
-    
 
 
 
@@ -55,6 +66,8 @@ btn5.onclick = function() {
     alertThing.innerHTML = "<div class='alert alert-success'>Winner, winner! Chicken Dinner!</div>";
 }
 
+
+
 btn6 = document.getElementById("btn-new-task");
 
 btn6.onclick = function() {
@@ -64,4 +77,21 @@ btn6.onclick = function() {
 
     let parentList = document.getElementById("todo-tasks");
     parentList.appendChild(newTask);
+}
+
+
+//To Do List
+
+btn7 = document.getElementById("btn-new-task");
+
+btn7.AddEventListener("click", addToDo)
+
+function addToDo() {
+    let listItem = document.createElement("li");
+    let checkBox = 
+}
+
+
+function taskCompleted() {
+
 }
