@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", init);
 
+//alert("dfsdf");
 function init() {
     console.log(document.getElementById("top"));
     let btnSubmit = document.querySelector("button.btn");
@@ -18,7 +19,10 @@ function init() {
             if (field.length == 0)
                 return "No first name was entered.";
             
-                else 
+            else if ([/a-z/]);
+                return "Only .... can be entered.";
+
+            else 
                 return "";
         }
 
