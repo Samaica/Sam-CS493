@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", init);
+ document.addEventListener("DOMContentLoaded", init);
 
 //alert("dfsdf");
 function init() {
