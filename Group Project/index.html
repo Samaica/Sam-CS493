@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Student Registration - Sign in</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <style>
+            div .box {
+                background-color: gray;
+                height: 100px;
+                width: 100px;
+                font-size: xx-large;
+                color: white;
+            }
+            input#newtask {
+                margin: 1.5rem;
+                height: 1.8rem;
+                border: 1px solid gray;
+                border-radius: 4px;
+            }
+            li > input[type="checkbox"] {
+                margin: 0 10px;
+            }
+            li > label {
+                line-height: 40px;
+                width: 70%;
+            }
+            .delete{
+                background: none;
+                border: 0px;
+                color:gray;               
+            }
+            .delete:hover {
+                color: red;
+                cursor: pointer;
+            }
+
+    
+        </style>
+    </head>
+    <body>
+        <nav>
+            <div>
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a  class="nav-link" href="#">Home</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="#">Search</a>
+                    </li>     
+                    <li class="nav-item">
+                        <a  class="nav-link" href="#">Menu Two</a>
+                    </li>
+                    <li class="nav-item">
+                        <a  class="nav-link" href="#">Menu Three</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav> 
+        <img class="rounded mx-auto d-block" id="logo" src="./Images/logo.png" alt="logo" width="200" height="200">
+        <header>
+            <div role="alert" class="text-center alert alert-danger" id="alertbox" style="display: none; wid"></div>
+           
+        </header>
+        <div class="container w-50">
+            <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Forgot password?</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Log in</button>
+              </form>
+        </div>
+
+        <br>
+        <br>
+        <div>
+        <footer class="page-footer bg-light">
+            <div class="footer-copyright text-center">&copy; by CS493 Course (Author: Sam)</div>
+        </footer>
+       </div>
+
+
+    <script src="./JavaScript/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </body>
+</html>
