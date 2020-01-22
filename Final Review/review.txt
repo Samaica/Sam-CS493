@@ -1,0 +1,2 @@
+review ex10
+array of objects
