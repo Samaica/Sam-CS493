@@ -7,7 +7,18 @@
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <style>
+            #logo {
+                padding-top: 0%;
+            }
             
+            .jumbotron {
+                padding-top: 0%;
+                padding-bottom: 10px;
+            }
+            
+            .textColour {
+                color: white;
+            }
         </style>
     </head>
     <body>
@@ -15,10 +26,10 @@
             <div>
                 <ul class="nav nav-tabs">
                     <li class="nav-item">
-                        <a  class="nav-link" href="#">Home</span></a>
+                        <a  class="nav-link" href="index.html">Home</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link"  href="#">Search</a>
+                        <a class="nav-link"  href="search.html">Search</a>
                     </li>     
                     <li class="nav-item">
                         <a  class="nav-link" href="#">Enrollment</a>
@@ -30,27 +41,56 @@
 
             </div>
         </nav>
+        <div>
+            <header>
+                <div class="jumbotron text-center">
+                    <img class="" id="logo" src="./Images/logo.png" alt="logo" width="200" height="200">
+                    <h1 id="top">Anon College</h1>
+                    <p id="leadtext" class="lead" >Courses & Classes</p>
+                </div>
+            </header>
+        </div>
         <section>
-        <div class="">
-        
-        <header>
-            <div role="alert" class="text-center alert alert-danger" id="alertbox" style="display: none;"></div>
-           
-        </header>
-            <div class="container w-50">
+            <div class="">
+                <header>
+                    <div role="alert" class="text-center alert alert-danger" id="alertbox" style="display: none;"></div>         
+                </header>
+                <div class="container marketing">
+
+                    <!-- Three columns of text below the carousel -->
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <img class="rounded mx-auto d-block" id="logo" src="./Images/cs-logo.png" alt="logo" width="150" height="150">
+                        <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text></svg> -->
+                        <h2>Computer Science</h2>
+                        <p>Our mission is to provide students the opportunity to learn about both the applied and theoretical aspects of computer science in order that they be able to apply this knowledge to solve real world problems in an increasingly diverse, ever-changing, and technology-driven world.</p>
+                        <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+                      </div><!-- /.col-lg-4 -->
+                      <div class="col-lg-4">
+                        <img class="rounded mx-auto d-block" id="logo" src="data:image/jpeg;base64,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" alt="logo" width="150" height="150">
+                        <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
+                        <h2>Mathematics</h2>
+                        <p>The goal of the department is to provide each mathematics major the opportunity to develop breadth and depth in theoretical and applied areas of mathematics, including computer and mathematics for teaching. Students will acquire abstract thinking, analytical and problem-solving skills which are applicable in nearly every area of life.</p>
+                        <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+                      </div><!-- /.col-lg-4 -->
+                      <div class="col-lg-4">
+                        <img class="rounded mx-auto d-block" id="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhH1BevuuAeXf2O2rTrCZVYGzgu1pXWMBrKw6rEc8cO9jBHbVY7A&s" alt="logo" width="150" height="150">
+                        <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
+                        <h2>Chemistry</h2>
+                        <p>The Chemistry major provides students with a sound foundation in the theoretical and experimental principles of chemistry. The course of study includes the areas of analytical, inorganic, organic, physical chemistry and biochemistry.</p>
+                        <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+                      </div><!-- /.col-lg-4 -->
+                    </div><!-- /.row -->
                 
-            </div>
+                  </div>
 
-        
-       
-
-            <div class="mt-4">
-                <footer class="page-footer bg-dark">
-                    <div class="textColour footer-copyright text-center">&copy; by CS493 Course (Author: Sam)</div>
-                </footer>
+                <div class="mt-4">
+                    <footer class="page-footer bg-dark">
+                        <div class="textColour footer-copyright text-center">&copy; by CS493 Course (Author: Sam)</div>
+                    </footer>
+                </div>
             </div>
-    </div>
-</section>
+        </section>
 
 
     <!-- <script src="./JavaScript/index.js"></script> -->
