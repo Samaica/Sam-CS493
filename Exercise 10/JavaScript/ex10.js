@@ -18,15 +18,15 @@ if (aVar === 5)
 if (parseInt(aVar) === 5)
     console.log("aVar === 5 YES")
 
-// for (i = 1, j = 10; i <= j; i++)
-//     console.log(i);
+for (i = 1, j = 10; i <= j; i++)
+    console.log(i);
 
-// // for (i = 5, count = 100; i <= count; i=i+5)
-// //     console.log(i);
+for (i = 0, count = 100; i <= count; i=i+5)
+    console.log(i);
 
-// max = 2048;
-// for (i = 1; i = max; i = i * 2)
-//     console.log(i);
+max = 2048;
+for (i = 1; i <= max; i = i * 2)
+    console.log(i);
 
 let listName = ['Kevin', 'Bryan', 'Sam', 'Theodore','Nahid'];
 console.log(listName[0]);
@@ -66,7 +66,7 @@ function changeTextColor() {
     document.getElementById("top").style.color="red";
 }
 
-// changeTextColor();
+//changeTextColor();
 
 //no need for changeTextColor()'s parenthesis or else it will call function
 document.getElementById("top").ondblclick = changeTextColor;
