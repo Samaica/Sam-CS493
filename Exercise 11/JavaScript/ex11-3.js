@@ -77,3 +77,7 @@ function removeMenu(){
     parentNode.removeChild(lastChild);
 }
 // parentNode.removeChild(parentNode.lastChild)
+
+let img2 = document.getElementById("img");
+
+// img2.setAttribute("height", "1000px");
