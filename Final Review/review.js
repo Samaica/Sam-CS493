@@ -1,4 +1,4 @@
-console.log("Final Reviews")
+    console.log("Final Reviews")
 
 //Given this type of code, you should be able to write the expected output in the console.
 for (i= 0 ; i<10 ; i+=5){
@@ -55,5 +55,12 @@ for (let n of temp){
 para.innerHTML = para.innerHTML +  "<br>" + stringText;
 
 
+let arrayName = [4,5,1,3,2]
+x = 0
+for (let n of arrayName){
+    x = x + n;
+}
+
+console.log(x);
 //puts  stringtext in front
 //para.innerHTML =   "<br>" + stringText + para.innerHTML ;
