@@ -39,11 +39,30 @@ let student = {
     }],
     
     year : "Senior-L",
-    bio : function() {
-        return ("My name is " + student.name + student.lastname 
-        + " and I like the songs: \n" + this.music);
+    bio: function (){
+        return ("My name is " + this.name + " " + this.lastname +  " and I like " + this.music);
+        },
+        coursesDone: function (){
+            let course ="";
+            for (let i of this.courses){
+                course += i.coursenumber + " : " + i.coursename + "\n";
+            }
+            return (course);
         }
-    }
+    };
+    
+    
+    
+    console.log(student.bio());
+    console.log(student.coursesDone());
+    
+
+//     bio : function() {
+//         return ("My name is " + this.name + " " + this.lastname 
+//         + " and I like the songs: \n" + this.music.song);
+       
+//         }
+//     }
 
 
-console.log(student.bio());
+// console.log(student.bio());
